@@ -1,0 +1,34 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Music : MonoBehaviour
+{
+
+    private GameObject BackgroundMusic;
+    AudioSource backmusic;
+    
+
+    void Awake()
+    {
+
+
+        BackgroundMusic = GameObject.FindGameObjectWithTag("Music");
+       
+
+        DontDestroyOnLoad(transform.gameObject);
+        
+        backmusic = GetComponent<AudioSource>(); //πË∞Ê¿Ωæ« ¿˙¿Â«ÿµ“
+       
+       
+    }
+    public void BackGroundMusicOffButton() //πË∞Ê¿Ωæ« ≈∞∞Ì ≤Ù¥¬ πˆ∆∞
+    {
+
+        BackgroundMusic = GameObject.Find("BackgroundMusic");
+        backmusic = BackgroundMusic.GetComponent<AudioSource>(); //πË∞Ê¿Ωæ« ¿˙¿Â«ÿµ“
+        if (backmusic.isPlaying) backmusic.Pause();
+        else backmusic.Play();
+    }
+
+}
