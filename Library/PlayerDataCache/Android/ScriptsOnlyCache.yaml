@@ -1459,4 +1459,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Gaksi.unity
   - Assets/Scenes/Imme.unity
   - Assets/Scenes/Bunae.unity
-  playerPath: C:/arproject_final/BuildApp/tal101.apk
+  playerPath: C:/Github/arproject_final/buildapp/tal__64bit.apk
